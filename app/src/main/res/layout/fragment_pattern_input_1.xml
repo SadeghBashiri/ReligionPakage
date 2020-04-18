@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".FragmentPatternInput1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textColorHint="#000000"
+            app:srcCompat="@mipmap/ic_check_ok"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColorHint="#000000"
+            app:srcCompat="@mipmap/ic_check_cancel"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/patternView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:correctStateColor="#1B5E20"
+        app:normalStateColor="#000000"
+        app:wrongStateColor="#D50000" />
+
+
+</LinearLayout>

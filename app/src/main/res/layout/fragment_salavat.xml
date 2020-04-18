@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSalavat">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout_count">
+    <co.religionpakage.customViews.MyImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/imagerosemohammadi"
+        android:id="@+id/img_salavat"/>
+        <co.religionpakage.customViews.MyTextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="#4CAF50"
+            android:textSize="40sp"
+            android:id="@+id/txt_counter"/>
+    </RelativeLayout>
+</FrameLayout>

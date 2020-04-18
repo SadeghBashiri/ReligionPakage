@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".FragmentNumericInput">
+
+    <RelativeLayout
+        android:id="@+id/layout_RelativeLayout_Kartabl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_shadow"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imageView_Kartabl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/ic_kartabl"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageView_Kartabl"
+            android:hint="کارتابل"
+            android:textColorHint="#0c600a"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_Kartabl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:hint="10"
+            android:textColorHint="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/textView_Kartabl"
+            android:hint="خوانده نشده"
+            android:paddingTop="5dp"
+            android:textColorHint="#0703ff"
+            android:textSize="12sp"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_shadow"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imageView_Payamresan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/ic_payamresan"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageView_Payamresan"
+            android:hint="پیامرسان"
+            android:textColorHint="#0c600a"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_Payamresan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:hint="5"
+            android:textColorHint="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/textView_Payamresan"
+            android:hint="خوانده نشده"
+            android:paddingTop="5dp"
+            android:textColorHint="#0703ff"
+            android:textSize="12sp"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:baselineAligned="false"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="2">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginEnd="10dp"-->
+
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/border_shadow"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView_Karha"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerVertical="true"-->
+
+<!--                app:srcCompat="@mipmap/ic_karha"-->
+<!--                tools:ignore="ContentDescription" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_toEndOf="@+id/imageView_Karha"-->
+<!--                android:hint="کارها"-->
+<!--                android:textColorHint="#0c600a"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView_Karha"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:hint="12"-->
+<!--                android:textColorHint="#000000"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_toStartOf="@+id/textView_Karha"-->
+<!--                android:hint="امروز"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:textColorHint="#0703ff"-->
+<!--                android:textSize="12sp"-->
+<!--                tools:ignore="RelativeOverlap" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/border_shadow"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView_Yaddasht"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                app:srcCompat="@mipmap/ic_yaddasht"-->
+<!--                tools:ignore="ContentDescription" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_toEndOf="@+id/imageView_Yaddasht"-->
+<!--                android:hint="@string/yaddasht"-->
+<!--                android:textColorHint="#0c600a"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView_Yaddasht"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:hint="14"-->
+<!--                android:textColorHint="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                tools:ignore="RelativeOverlap" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/border_shadow"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView_Taghvim"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+
+<!--            app:srcCompat="@mipmap/ic_taghvim"-->
+<!--            tools:ignore="ContentDescription" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView_Taghvim"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:hint="@string/taghvim"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

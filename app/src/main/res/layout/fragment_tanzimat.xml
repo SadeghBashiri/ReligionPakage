@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:id="@+id/fragment_tanzimat"
+    tools:context=".FragmentTanzimat">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_shadow"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp">
+
+
+        <TextView
+            android:id="@+id/textView_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:drawableEnd="@drawable/ic_lock"
+            android:hint="فعال نمودن قفل برنامه"
+            android:layoutDirection="ltr"
+            android:textColorHint="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColorHint="#000000" />
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/relativeLayout_afterTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switch_lock"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:id="@+id/textView_afterTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="پس از" />
+            <Spinner
+                android:layout_toEndOf="@+id/textView_afterTo"
+                android:id="@+id/spinner_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp" />
+            <TextView
+                android:layout_toEndOf="@+id/spinner_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="دقیقه"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_time"
+                android:hint="زمان, از زمان استفاده نکردن از برنامه قفل گردد." />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/linearLayout_choicePassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_numeric"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_shadow"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:hint="به صورت عددی"
+                android:textColorHint="#0c600a"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_pattern"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_shadow"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:hint="به صورت Pattern"
+                android:textColorHint="#0c600a"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

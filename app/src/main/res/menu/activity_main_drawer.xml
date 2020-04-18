@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <group android:id="@+id/grp0" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mizekar"
+            android:icon="@drawable/ic_vector_mizkar"
+            android:title="میزکار" />
+        <item
+            android:id="@+id/nav_kartabl"
+            android:icon="@drawable/ic_vector_kartabl"
+            android:title="کارتابل"
+            app:actionLayout="@layout/menu_counter"
+            />
+        <item
+            android:id="@+id/nav_peygiri"
+            android:icon="@drawable/ic_vector_peygiri"
+            android:title="صلوات شمار"
+            app:actionLayout="@layout/menu_counter"/>
+        <item
+            android:id="@+id/nav_payamResan"
+            android:icon="@drawable/ic_vector_payamresan"
+            android:title="پیامرسان"
+            app:actionLayout="@layout/menu_counter"/>
+        <item
+            android:id="@+id/nav_kholaseKartabloPeygiri"
+            android:icon="@drawable/ic_vector_kholase_kartabl_peygiri"
+            android:title="خلاصه کارتابل و پیگیری" />
+        <item
+            android:id="@+id/nav_karha"
+            android:icon="@drawable/ic_vector_karha"
+            android:title="کارها" />
+        <item
+            android:id="@+id/nav_yaddasht"
+            android:icon="@drawable/ic_vector_yaddasht"
+            android:title="یادداشت" />
+    </group>
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_tanzimat"
+            android:icon="@drawable/ic_vector_tanzimat"
+            android:title="تنظیمات" />
+        <item
+            android:id="@+id/nav_taghirKarbar"
+            android:icon="@drawable/ic_vector_taghir_karbar"
+            android:title="تغییر کاربر" />
+        <item
+            android:id="@+id/nav_khoroj"
+            android:icon="@drawable/ic_vector_khoroj"
+            android:title="خروج" />
+    </group>
+
+
+
+
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".FragmentPattern">
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:id="@+id/textView_errorMassage_pattern"
+    android:textColor="#da0614"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_centerHorizontal="true"
+    android:textStyle="bold"/>
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/patternView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotCount="3"
+        app:dotNormalSize="15dp"
+        app:dotSelectedSize="30dp"
+        app:correctStateColor="#1B5E20"
+        app:normalStateColor="#000000"
+        app:wrongStateColor="#D50000"
+        app:dotAnimationDuration="200"
+        app:pathEndAnimationDuration="100"/>
+</RelativeLayout>
